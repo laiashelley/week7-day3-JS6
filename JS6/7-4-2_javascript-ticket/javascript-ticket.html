@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javascript-ticket.css">
+    <title>Vamos al cine!</title>
+</head>
+<body>
+   
+    <div class="datos">
+        <h1>Introduce los datos:</h1>
+
+        <label for="dia" class="dia">Que dia vas a venir?</label>
+        <input type="date" id="date">
+        <!-- dia -->
+
+        <label for="hora">Escoge una hora:</label>
+        <select id="hour" name="hour">
+          <option value="selecciona hora">Selecciona la hora</option>  
+          <option value="16:00">16:00</option>
+          <option value="19:00">19:00</option>
+          <option value="22:00">22:00</option>
+        </select> 
+        <!-- hora -->
+
+        <label for="sala" class="sala">Escoge una sala:</label>
+        <select id="sala" name="sala">
+            <option value="selecciona sala">Selecciona la sala</option>
+            <option value="SALA 1">1</option>
+            <option value="SALA 2">2</option>
+            <option value="SALA 3">3</option>
+            <option value="SALA 4">4</option>
+            <option value="SALA 5">5</option>
+            <option value="SALA 6">6</option>
+            <option value="SALA 7">7</option>
+            <option value="SALA 8">8</option>
+            <option value="SALA 9">9</option>
+            <option value="SALA 10">10</option>
+            <option value="SALA 11">11</option>
+            <option value="SALA 12">12</option>
+          </select>
+        <!-- sala -->
+
+        <label for="pelicula" class="pelicula">Escoge una pelicula:</label>
+        <select id="movie" name="movie">
+            <option value="selecciona pelicula">Selecciona la película</option>
+            <option value="Madame Web">Madame Web</option>
+            <option value="La Sociedad de la Nieve">La Sociedad de la Nieve</option>
+            <option value="Pobres Criaturas">Pobres Criaturas</option>
+            <option value="La Piscina">La Piscina</option>
+          </select>
+        <!-- pelicula -->
+
+        <label for="fila" class="fila">Escoge una fila (Introduce un valor de 1 a 12):</label>
+        <input type="number" id="fila" min="1" max="12">
+        <!-- fila -->
+
+        <label for="butaca" class="butaca">Escoge una butaca (Introduce un valor de 1 a 12):</label>
+        <input type="number" id="butaca" min="1" max="12">
+        <!-- butaca -->
+
+        <input 
+            type="button"
+            id="button"
+            value="Genera el ticket"
+            onclick="calculoTicket()"
+        />
+
+    </div>
+    
+    <div class="ticket-cine">
+        <h3>BAGES CENTRE</h3>
+        <div id="resultadoHora"></div>
+        <div id="resultadoSala"></div>
+        <div id="resultadoPelicula"></div>
+        <div id="resultadoFila"></div>
+        <div id="resultadoButaca"></div>
+        <h3>5,20 eur</h3>
+        <div id="resultadoDia"></div>
+    </div>
+
+    <input 
+        type="button"
+        id="impresion"
+        value="Imprimir ticket"
+    />
+
+    <script src="javascript-ticket.js"></script>
+</body>
+</html>

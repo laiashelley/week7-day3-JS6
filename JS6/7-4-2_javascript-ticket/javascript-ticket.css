@@ -1,0 +1,136 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(153, 197, 218, 0.589);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(12, 15, 192);
+    border-width: thin;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px 50px;
+    width: 630px;
+}
+
+input,select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    background-color: rgb(231, 214, 214);
+    border-radius: 5px;
+    border-width: thin;
+    padding: 5px;
+}
+
+
+#button{
+    display: flex;
+    width: 150px;
+    background-color: rgba(86, 172, 212, 0.589);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.ticket-cine{
+    background-color: rgba(245, 245, 220, 0.521);
+    font-family: monospace;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 80px;
+    border-style: solid;
+}
+
+#resultadoHora{
+    position: absolute;
+    top:50px;
+    left: 100px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+}
+
+#resultadoSala{
+    position: absolute;
+    top:50px;
+    right: 100px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+}
+
+#resultadoPelicula{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    width: 300px;
+    height: 20px;
+}
+
+#resultadoFila{
+    position: absolute;
+    top:120px;
+    left: 100px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+}
+
+#resultadoButaca{
+    position: absolute;
+    top:120px;
+    right: 100px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+}
+
+#resultadoDia{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+}
+
+#impresion{
+    margin-left: 230px;
+    margin-top: 20px;
+    background-color: rgba(86, 172, 212, 0.589);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}

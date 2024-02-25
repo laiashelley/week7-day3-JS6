@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="javascript-imc.css" />
+    <title>Calcula tu IMC!</title>
+  </head>
+  <body>
+    <div class="calculadora">
+      <h1>Calculadora de IMC (Índice de Masa Corporal)</h1>
+      <p>Conoce tu peso ideal!</p>
+      <p>El índice de masa corporal (IMC) es el peso de una persona en kilogramos dividido por el cuadrado de la estatura en metros.</p>
+      <h3>Altura</h3>
+      <input type="number" placeholder="Introduce valor en m." id="altura"/>
+      <h3>Peso</h3>
+      <input type="number" placeholder="Introduce valor en kg." id="peso"/>
+
+      <input 
+        type="button"
+        id="button"
+        value="Calcula!"
+        onclick="calculoImc()"
+      />
+
+        <div id="resultadoImc"></div>
+
+        <div id="resultadoEscalado"></div>
+
+        <table>
+            <tr>
+              <th>ÍNDICE MASA CORPORAL</th>
+              <th>CLASIFICACIÓN</th>
+            </tr>
+            <tr>
+              <td> Menos de 16.00</td>
+              <td>Infrapeso: Delgadez Severa</td>
+            </tr>
+            <tr>
+              <td>Entre 16.00 y 16.99</td>
+              <td>Infrapeso: Delgadez moderada</td>
+            </tr>
+            <tr>
+              <td>Entre 17.00 y 18.49</td>
+              <td>Infrapeso: Delgadez aceptable</td>
+            </tr>
+            <tr>
+              <td>Entre 18.50 y 24.99</td>
+              <td>Peso Normal</td>
+            </tr>
+            <tr>
+              <td>Entre 25.00 y 29.99</td>
+              <td>Sobrepeso</td>
+            </tr>
+            <tr>
+              <td>Entre 30.00 y 34.99</td>
+              <td>Obeso: Tipo I</td>
+            </tr>
+            <tr>
+              <td>Entre 35.00 y 40.00</td>
+              <td>Obeso: Tipo II</td>
+            </tr>
+            <tr>
+              <td>Más de 40.00</td>
+              <td>Obeso: Tipo III</td>
+            </tr>
+          </table>
+          
+    </div>
+    <script src="javascript-imc.js"></script>
+  </body>
+</html>
